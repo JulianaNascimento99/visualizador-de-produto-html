@@ -1,0 +1,268 @@
+﻿/* estilos globais */
+
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #000000;
+    color: #e0e0e0;
+}
+
+i {
+    margin-right: 5px;  
+}
+input {
+    box-sizing: border-box;
+}
+ul {
+    padding: 0;
+}
+
+/* Header - barra de navegação */
+header {
+    background-color: #1e1e1e;
+}
+
+.top-bar {
+    max-width: 1200px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.logo {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.logo img {
+        width: 180px; /* Tamanho do logo ajustado, acho que ficou melhor de visualizar */
+ }
+.nav {
+    display: flex;
+    gap: 20px;  
+}
+nav a {
+    color: #fff001;
+    text-decoration: none;
+    font-weight: bold;
+    display: flex;
+    transition: .3s;
+}
+.nav a:hover {
+    color: #52bfdd; /* Cor de destaque ao passar o mouse */
+}
+.user-options {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+}
+.user-options a {
+    color: #fff;
+    text-decoration: none;
+    transition: .3s;
+}
+.user-options a:hover {
+    color: #52bfdd; /* Cor de destaque ao passar o mouse */
+}
+
+.user-options input[type="text"] {
+    padding: 8px;
+    border: 1px solid #fff001 ;
+    border-radius: 5px;
+}
+.container{
+    max-width: 1200px;
+    margin: 20px auto;
+    padding: 20px;
+}
+.product-details{
+    display: flex;
+    gap: 40px;
+}
+/* imagens produto */
+.product-gallery{
+    flex: 1;
+}
+.product-gallery img{
+    width: 100%; 
+    width: 580px;
+    border-radius: 10px;
+}
+.gallery-thumbnails {
+    display: flex; /* para alinhar as miniaturas em linha */
+    gap: 10px;
+    margin-top: 15px;
+
+    flex-wrap: wrap; /* permite que as thumbs quebrem para a próxima linha */
+    align-items: center;
+    overflow-x: auto; /* evita que ultrapassem o container em telas pequenas */
+    padding-bottom: 4px; /* espaço para o scroll horizontal quando aparecer */
+}
+.gallery-thumbnails img{
+    width: 110px;
+
+    max-width: 100%;
+    flex: 0 0 110px; /* mantém um tamanho base, mas não força overflow do container pai */
+
+    border-radius: 5px;
+    cursor: pointer; /* com javascript as imagens da thumb vão mudar conforme se clica */
+    border: 2px solid transparent;
+    transition: .3s;
+}
+.gallery-thumbnails img:hover{
+    border: 2px solid #52bfdd; /* Cor de destaque ao passar o mouse */
+}
+
+/* infos produto */
+.product-info {
+    flex: 1;
+}
+.product-path,
+.product-code {
+    font-size: .9rem;
+    color: #777;
+    margin-bottom: 10px;
+}
+.badge {
+    color: #db275e; /* cor verde para as estrelas */
+    font-size: 1.2rem;
+}
+.product-info h2 {
+    color: #fff001;
+    font-size: 2.5rem;
+    margin: 10px 0; 
+}
+.price {
+    font-size: 2rem;
+    color: #52bfdd;
+    margin: 10px 0;
+}
+.rating {
+    color: #81c784; /* cor verde para as estrelas */
+    font-size: 1.2rem;  
+}
+.product-description {
+    font-size: 1rem;
+    line-height: 1.6;
+    color: #b0b0b0;
+    margin-bottom: 20px;    
+}
+
+/* opções do produto*/
+.product-options {
+    margin: 20px 0;
+}
+#color, #quantity {
+    width:100px;
+}
+.product-options label {
+    margin-top: 10px;
+    font-weight: bold;
+    display: block;
+}
+.product-options select,
+.product-options input {
+    padding: 10px;
+    margin-top: 5px;
+    border: 1px solid #333;
+    border-radius: 5px;
+    width: 100%;
+    max-width: 200px;
+}
+
+/* Botões de Ação */
+.buttons {
+    display: flex;
+    gap: 15px;
+    margin-top: 20px;
+}
+
+.add-to-cart {
+    padding: 15px 30px;
+    background-color: #1e1e1e;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background 0.3s;
+}
+
+.add-to-cart:hover {
+        background-color: #388e3c;
+}
+
+.add-to-wishlist {
+    padding: 15px 30px;
+    background-color: #1e1e1e;
+    color: #ffa500;
+    border: 2px solid #ffa500;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background 0.3s, color 0.3s;
+}
+
+.add-to-wishlist:hover {
+        background-color: #1e1e1e;
+        color: #fff;
+}
+
+.delivery {
+    margin-top: 20px;
+    color: #777;
+    font-size: 0.9rem;
+}
+
+/* Especificações do Produto */
+.product-specs {
+    margin-top: 40px;
+    background-color: #1e1e1e;
+    padding: 20px;
+    border-radius: 10px;
+}
+
+.tabs {
+    display: flex;
+    gap: 30px;
+    border-bottom: 2px solid #333;
+    padding-bottom: 10px;
+    margin-bottom: 20px;
+}
+
+.tabs li {
+        list-style: none;
+        font-weight: bold;
+        cursor: pointer;
+        color: #777;
+}
+
+.tabs li:hover {
+            color: #ffa500;
+}
+
+.specs-content p {
+    font-size: 1rem;
+    color: #b0b0b0;
+    margin: 10px 0;
+}
+
+
+
+/* Responsividade */
+/* Estilos para telas menores que 768px */
+@media (max-width: 1024px) {
+    .top-bar {
+        flex-direction: column;
+        gap: 15px;
+        padding: 20px;
+    }
+
+    .logo h1 {
+        margin: 0;
+    }
+    .product-details {
+        flex-direction: column;
+        gap: 20px;
+    }
+}

@@ -1,0 +1,112 @@
+﻿<!DOCTYPE html>
+
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>AutoFixer - Cyberpunk Vehicles</title>
+    <link rel="stylesheet" href="styles.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" />
+</head>
+<body>
+    <header>
+        <div class="top-bar">
+            <div class="logo">
+                <!-- IMAGEM -->
+                <img src="Infos AutoFixer/Auto Fixer Logo.png" alt="AutoFixer Logo" />
+                <h1>AutoFixer</h1>
+            </div>
+            <nav class="nav">
+                <a href="index.html">Início</a>
+                <a href="carros.html">Carros</a>
+                <a href="motos.html">Motocicletas</a>
+                <a href="promo.html">Promoções</a>
+            </nav>
+            <div class="user-options">
+                <a href="#">
+                    <i class="fas fa-user"></i>
+                    login / cadastro
+                </a>
+                <input type="text" placeholder="Buscar produto" />
+                <i class="fas fa-search"></i>
+                <!-- o fas funciona como uma inicialização, enquanto o 'fa-' faz o link com o icone correto-->
+            </div>
+
+        </div>
+    </header>
+    <main class="container">
+        <div class="product-details" id="Motorcycles">
+            <!-- IMAGEM -->
+            <div class="product-gallery">
+                <img src="Motorcycles/Quadra logo.png" alt="Motorcycles Vehicles" style="visibility:visible" />
+                <div class="gallery-thumbnails">
+                    <img src="Motorcycles/ARCH Nazaré Kobold.png" alt="ARCH Nazaré Kobold" />
+                    <img src="Motorcycles/ARCH Nazaré Racer.png" alt="ARCH Nazaré Racer" />
+                    <img src="Motorcycles/ARCH Nazaré.png" alt="ARCH Nazaré" />
+                    <img src="Motorcycles/Brennan Apollo.png" alt="Brennan Apollo" />
+                    <img src="Motorcycles/Brennan Apollo 650 S.png" alt="Brennan Apollo 650 S" />
+                    <img src="Motorcycles/Yaiba Kusanagi CT 3X.png" alt="Yaiba Kusanagi CT 3X" />
+                    <img src="Motorcycles/Yaiba Kusanagi Akashita.png" alt="Yaiba Kusanagi Akashita" />
+                    <img src="Motorcycles/Yaiba Kusanagi Peacekeeper.png" alt="Yaiba Kusanagi Peacekeeper" />
+                </div>
+            </div>
+            <!-- INFOS -->
+            <div class="product-info">
+                <p class="product-path">
+                    <i class="fas fa-chevron-right"></i> Cyberpunk / Motorcycles / Motos
+                </p>
+                <p class="badge">
+                    <i class="fa-solid fa-certificate"></i>
+                    Queima de Estoque - 20% de Desconto!
+                </p>                
+                <h2>Motocicletas</h2>
+
+                <p class="product-code">Código do Produto: MOTO25BR</p>
+                <p class="price">€$ 68000,00</p>
+                <p class="rating">
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star-half-alt"></i>
+                    22500 avaliações
+                </p>
+                <p class="product-description">
+                    Our motorcycle model is a unique mix between a cruiser and a racing bike - like an outcast, it refuses strict labels. Equipped with a single-sided, aluminium swingarm and cutting-edge steering capabilities, it is perfect for an aggressive riding style. eng.us. <br /> <br />
+                    Nosso modelo de motocicleta é uma combinação única entre uma cruiser e uma moto de corrida — como uma rebelde, ela se recusa a ser rotulada. Equipada com um braço oscilante de alumínio unilateral e recursos de direção de última geração, ela é perfeita para um estilo de pilotagem agressivo. pt.br.
+                </p>
+                <div class="product options">
+                    <label for="typemoto">Tipo de Moto:</label>
+                    <select name="typemoto" id="typemoto">
+                        <option value="ARCH Nazaré Kobold">ARCH Nazaré Kobold</option>
+                        <option value="ARCH Nazaré Racer">ARCH Nazaré Racer</option>
+                        <option value="ARCH Nazaré">ARCH Nazaré</option>
+                        <option value="Brennan Apollo">Brennan Apollo</option>
+                        <option value="Brennan Apollo 650 S">Brennan Apollo 650 S</option>
+                        <option value="Yaiba Kusanagi CT 3X">Yaiba Kusanagi CT 3X</option>
+                        <option value="Yaiba Kusanagi Akashita">Yaiba Kusanagi Akashita</option>
+                        <option value="Yaiba Kusanagi Peacekeeper">Yaiba Kusanagi Peacekeeper</option>
+                    </select>
+                    <label for="quantity">Quantidade</label>
+                    <input type="number" id="quantity" name="quantity" value="1" />
+                </div>
+                <div class="buttons">
+                    <button class="add-to-cart">
+                        <i class="fas fa-shopping-cart"></i>
+                        Adicionar ao carrinho
+                    </button>
+                    <button class="add-to-wishlist">
+                        <i class="fas fa-heart"></i>
+                        Adicionar à lista de desejos
+                    </button>
+                </div>
+                <p class="delivery">
+                    <i class="fas fa-truck"></i>
+                    Estimativa de Entrega: Consulte nossos Termos e Condições
+                </p>
+            </div>
+        </div>
+
+    </main>
+</body>
+</html>
